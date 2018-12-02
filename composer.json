@@ -7,7 +7,8 @@
     "php": "^7.1.3",
     "fideloper/proxy": "^4.0",
     "laravel/framework": "5.7.*",
-    "laravel/tinker": "^1.0"
+    "laravel/tinker": "^1.0",
+    "pbbg/core": "dev-develop"
   },
   "require-dev": {
     "roave/security-advisories": "dev-master",
@@ -18,6 +19,15 @@
     "nunomaduro/collision": "^2.0",
     "phpunit/phpunit": "^7.0"
   },
+  "repositories": [
+    {
+      "type": "path",
+      "url": "../core",
+      "options": {
+        "symlink": true
+      }
+    }
+  ],
   "config": {
     "optimize-autoloader": true,
     "preferred-install": "dist",
